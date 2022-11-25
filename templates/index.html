@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+
+<body id="corpo-home" background="{{url_for('static', filename='imagens/fundo.png')}}">
+    <div id="interface">
+        <header id="cabeçalho">
+            <img src="{{ url_for('static', filename='imagens/logo.png') }}" alt="logo" id="logo">
+            <ul id="lista">
+                <li><a href="index">Home</a></li>
+                <li><a href="quemsomos">Quem Somos</a></li>
+                <li><a href="contato">Contato</a></li>
+
+            </ul>
+        </header>
+        <img src="{{ url_for('static', filename='imagens/capa.png') }}" alt="capa" id="capa">
+        <div id="texto">
+
+                <h3>Sobre a Universidade </h3>
+                <p>
+                    Lorem <strong>ipsum dolor</strong> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem <strong>ipsum dolor</strong> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <h3>Todos os direitos reservados</h3>
+        </div>
+    </div>
+</body>
+</html>

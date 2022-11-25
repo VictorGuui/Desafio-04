@@ -1,0 +1,66 @@
+body#corpo-home{
+    background: url('./fundo.png') repeat-x;
+
+}
+
+body#corpo{
+    background: url('./fundo2.png') repeat-x;
+
+}
+
+#texto{
+    position: relative;
+    width: 700px;
+    text-align: left;
+
+}
+
+#cabeçalho{
+    position: relative;
+    display: flex;
+    margin: 30px 23px 10px 20px;
+    padding: -30px;
+    width: 700px;
+
+}
+
+img#logo{
+    position: relative;
+    right: 20px;
+}
+
+#lista {
+    padding: 4px;
+    display: flex;
+    margin-left: 530px;
+    list-style: none;
+}
+
+ul#lista {
+    position: relative;
+    left: 460px;
+    margin-left: 8px;
+    margin-right: 50px;
+}
+
+ul#lista li {
+    margin: 4px;
+}
+
+#interface {
+    position: relative;
+    width: 900px;
+    padding: 10px;
+    margin: -27px auto 0px auto;
+    text-align: center;
+}
+
+img#capa {
+    position: relative;
+    align-self: right;
+    top: 7px;
+}
+
+#texto-contato {
+    text-align: left;
+}
