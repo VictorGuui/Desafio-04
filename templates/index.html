@@ -11,8 +11,7 @@
 <body id="corpo-home" background="{{url_for('static', filename='imagens/fundo.png')}}">
     <div id="interface">
           {% include 'header.html' %}  
-        <!-- {% extends "header.html" %} -->
-        <!-- {% block content %} -->
+        
 
         <img src="{{ url_for('static', filename='imagens/capa.png') }}" alt="capa" id="capa">
         <div id="texto">
@@ -30,6 +29,6 @@
             <h3>Todos os direitos reservados</h3>
         </div>
     </div>
-    <!-- {% endblock %} -->
+    
 </body>
 </html>
