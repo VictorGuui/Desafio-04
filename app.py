@@ -1,5 +1,6 @@
-from flask import Flask, render_template, url_for,request,redirect,flash
+from flask import Flask, render_template, url_for,request,redirect
 from flask_mysqldb import MySQL
+import functions as function
 
 app = Flask('__name__')
 mysql = MySQL(app)
@@ -43,13 +44,10 @@ def contato():
 
 @app.route('/users')
 def users():
-    cur = mysql.connection.cursor()
+    userDetails = function.findUsers()
+   
 
-    users = cur.execute("SELECT * FROM contato")
-
-    if users > 0 :
-        userDetails = cur.fetchall()
-        return render_template("user.html",userDetails=userDetails)
+    return render_template("users.html", userDetails=userDetails)
 
 
 if __name__ == '__main__':

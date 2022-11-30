@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    {% for user in userDetails %} 
+    
+    <p>EMAIL:{{user[0]}}</p>
+    <p>Assunto:{{user[1]}}</p>
+    <p>Descrição:{{user[2]}}</p>
+    <hr>
+    
+    
+    {% endfor %} 
+</body>
+</html>
